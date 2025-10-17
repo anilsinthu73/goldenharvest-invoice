@@ -1,0 +1,17 @@
+{
+  "name": "invoice-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "cd frontend && bun run dev",
+    "dev:backend": "cd backend && bun run dev",
+    "dev": "concurrently \"bun run dev:backend\" \"bun run dev:frontend\"",
+    "build": "cd frontend && bun run build",
+    "start": "cd backend && bun run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

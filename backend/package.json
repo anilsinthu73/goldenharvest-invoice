@@ -1,0 +1,23 @@
+{
+  "name": "golden-harvest-backend",
+  "version": "1.0.0",
+  "description": "Backend for Golden Harvest Invoice Generator",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.2",
+    "jspdf": "^3.0.3",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.23.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

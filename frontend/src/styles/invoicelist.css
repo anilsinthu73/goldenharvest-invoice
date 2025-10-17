@@ -1,0 +1,60 @@
+.invoice-list-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.invoice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.invoice-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.invoice-card:hover {
+  transform: translateY(-3px);
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btn-view,
+.btn-pdf {
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-view {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-pdf {
+  background-color: #28a745;
+  color: white;
+}
+
+.loading, .error, .empty {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}

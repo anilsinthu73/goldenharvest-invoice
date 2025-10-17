@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Harvest - Tax Invoice</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 40mm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .invoice-title {
+            text-align: center;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-size: 2rem;
+            color: #23cf23;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+            object-fit: contain;
+            object-position: left;
+            align-items: flex-start;
+            float: left;
+            margin-bottom: 10;
+            display: 'flex';
+            align-items: flex-start;
+            height: '180px';
+            width: '180px';
+            padding-left: 25px;
+        }
+
+        .company-name {
+            margin: 0;
+            color: rgb(0, 250, 10);
+            justify-content: right;
+            align-items: flex-end;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family:"Algerian", sans-serif;
+            letter-spacing: 1px;
+            padding-right: 25px;
+        }
+
+        .company-details {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.4;
+            font-weight: bold;
+            padding-right: 25px;
+        }
+
+        .details-section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .bill-to,
+        .invoice-details {
+            width: 48%;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .detail-row {
+            margin-bottom: 5px;
+            display: flex;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            text-wrap: nowrap;
+            width: 120px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        .item-description {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .terms {
+            margin: 20px 0;
+            font-size: 12px;
+        }
+
+        .terms ol {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        .totals {
+            margin: 20px 0;
+            text-align: right;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 5px;
+        }
+
+        .total-label {
+            width: 150px;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .total-value {
+            width: 100px;
+            text-align: right;
+        }
+
+        .amount-in-words {
+            margin: 20px 0;
+            font-style: italic;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+        }
+        hr{
+      
+            border-top: 20px solid #333;
+            border-radius:23px 23px 0 0;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+
+<body>
+      
+
+     
+    <div class="header">
+      <div class="logo">
+        <img src="logo.png" alt="Company Logo" style="height: 120px; width: 120px; object-fit: contain; object-position: left;">
+        </div>
+        <div class="invoice-title">Tax Invoice</div>
+        <div class="company-details" style="text-align: right;">
+        <div class="company-name">GOLDEN HARVEST</div>
+        <div class="company-details">
+          <div>GSTIN: 37CTWPJ4314B1ZN </div>
+          <div> FSSAI: 10125001000050</div>
+           <div>+91  9949589098</div>
+           <div>goldenharvest0648@gmail.com </div>
+           <div>www.goldenharvest.in</div>
+           <div>
+SH-31, Chinna Thulugu, Gara, Srikakulam,
+Andhra Pradesh - 532405 </div>
+        </div>
+        </div>
+    </div>
+    <hr/>
+
+
+
+    <div class="details-section">
+        <div class="bill-to">
+            <div class="section-title">BILL TO:</div>
+            <div class="detail-row">
+                <div class="detail-label">Customer Name:</div>
+                <div style=" color: blue; font-weight: bold; padding-left: 10px;">Anil Kumar</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Phone:</div>
+                <div>+91 8465924756</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Address:</div>
+                <div>JHS</div>
+            </div>
+        </div>
+
+        <div class="invoice-details">
+            <div class="section-title">INVOICE DETAILS:</div>
+            <div class="detail-row">
+                <div class="detail-label">Invoice No:</div>
+                <div style="color: red, font-size: 16px , ">GH25101202</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Invoice Date:</div>
+                <div>10/12/2025</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">State:</div>
+                <div>Andhra Pradesh</div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Description</th>
+                <th>Qty.</th>
+                <th>Rate (₹)</th>
+                <th>Amount (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    Banana Powder
+                    <div class="item-description">Banana Powder-1kg @₹570.00</div>
+                </td>
+                <td>1</td>
+                <td>570.00</td>
+                <td>570.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    Beetroot Powder
+                    <div class="item-description">Beetroot Powder-1kg @₹600.00</div>
+                </td>
+                <td>1</td>
+                <td>600.00</td>
+                <td>600.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="terms">
+        <div class="section-title">Terms & Conditions:</div>
+        <ol>
+            <li>Goods once sold cannot be returned.</li>
+            <li>Shipping Charges applicable to customers outside Andhra Pradesh.</li>
+            <li>Shipping Charges for first order is free.</li>
+        </ol>
+    </div>
+
+    <div class="totals">
+        <div class="total-row">
+            <div class="total-label">Sub Total:</div>
+            <div class="total-value">₹1170.00</div>
+        </div>
+        <div class="total-row">
+            <div class="total-label">CGST @2.5%:</div>
+            <div class="total-value">₹29.25</div>
+        </div>
+        <div class="total-row">
+            <div class="total-label">SGST @2.5%:</div>
+            <div class="total-value">₹29.25</div>
+        </div>
+        <div class="total-row">
+            <div class="total-label">Shipping Charges:</div>
+            <div class="total-value">₹451.00</div>
+        </div>
+        <div class="total-row" style="font-weight: bold; border-top: 1px solid #333; padding-top: 5px;">
+            <div class="total-label">Total:</div>
+            <div class="total-value">₹1679.50</div>
+        </div>
+    </div>
+
+    <div class="amount-in-words">
+        <strong>AMOUNT IN WORDS</strong><br>
+        One Thousand Six Hundred and Seventy Nine Rupees and Fifty Paises Only
+    </div>
+
+    <div class="signature">
+        <div style="margin-bottom: 40px;">(Signature)</div>
+        <strong>AUTHORISED SIGNATORY</strong>
+    </div>
+
+    <div class="footer">
+        Thank You for Your Business! Visit Again
+    </div>
+</body>
+
+</html>
